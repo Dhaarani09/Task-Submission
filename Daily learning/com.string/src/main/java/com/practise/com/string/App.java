@@ -1,0 +1,15 @@
+package com.practise.com.string;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class App {
+	public static void main(String args[]) {
+		Integer arr[] = {23,12,34,56,78,89,90,34,45,67,78};
+		Arrays.stream(arr).forEach(System.out::println);
+		List<Integer>istream = Arrays.stream(arr).collect(Collectors.toList());
+		System.out.println(istream);
+	}
+
+}
